@@ -33,6 +33,7 @@ namespace Logic
             var srcEncoding = Encoding.GetEncoding("UTF-8");
             using (StreamReader reader = new StreamReader(path1, encoding: srcEncoding))
             {
+                await Task.Delay(1);
                 text += reader.ReadToEnd();
             }
             return text;

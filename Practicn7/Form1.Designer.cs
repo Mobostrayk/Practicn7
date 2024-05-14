@@ -46,42 +46,45 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(27, 27);
+            label1.Location = new Point(31, 36);
             label1.Name = "label1";
-            label1.Size = new Size(127, 15);
+            label1.Size = new Size(159, 20);
             label1.TabIndex = 0;
             label1.Text = "Программный буфер";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(537, 27);
+            label2.Location = new Point(614, 36);
             label2.Name = "label2";
-            label2.Size = new Size(103, 15);
+            label2.Size = new Size(129, 20);
             label2.TabIndex = 1;
             label2.Text = "Файловый буфер";
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(27, 55);
+            richTextBox1.Location = new Point(31, 73);
+            richTextBox1.Margin = new Padding(3, 4, 3, 4);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(349, 494);
+            richTextBox1.Size = new Size(398, 657);
             richTextBox1.TabIndex = 2;
             richTextBox1.Text = "";
             // 
             // richTextBox2
             // 
-            richTextBox2.Location = new Point(537, 55);
+            richTextBox2.Location = new Point(614, 73);
+            richTextBox2.Margin = new Padding(3, 4, 3, 4);
             richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(349, 494);
+            richTextBox2.Size = new Size(398, 657);
             richTextBox2.TabIndex = 3;
             richTextBox2.Text = "";
             // 
             // button1
             // 
-            button1.Location = new Point(382, 99);
+            button1.Location = new Point(437, 132);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(149, 31);
+            button1.Size = new Size(170, 41);
             button1.TabIndex = 4;
             button1.Text = "=>";
             button1.UseVisualStyleBackColor = true;
@@ -89,9 +92,10 @@
             // 
             // button2
             // 
-            button2.Location = new Point(382, 167);
+            button2.Location = new Point(437, 223);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(149, 31);
+            button2.Size = new Size(170, 41);
             button2.TabIndex = 5;
             button2.Text = "<=";
             button2.UseVisualStyleBackColor = true;
@@ -100,25 +104,28 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(27, 567);
+            label3.Location = new Point(31, 756);
             label3.Name = "label3";
-            label3.Size = new Size(106, 15);
+            label3.Size = new Size(132, 20);
             label3.TabIndex = 6;
             label3.Text = "Количество строк";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(27, 598);
+            textBox1.Location = new Point(31, 797);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(229, 23);
+            textBox1.Size = new Size(261, 27);
             textBox1.TabIndex = 7;
             textBox1.Text = "0";
+            textBox1.KeyPress += textBox1_KeyPress;
             // 
             // button3
             // 
-            button3.Location = new Point(28, 631);
+            button3.Location = new Point(32, 841);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(228, 26);
+            button3.Size = new Size(261, 35);
             button3.TabIndex = 8;
             button3.Text = "Сгенерировать";
             button3.UseVisualStyleBackColor = true;
@@ -126,19 +133,21 @@
             // 
             // button4
             // 
-            button4.Location = new Point(274, 572);
+            button4.Location = new Point(313, 763);
+            button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
-            button4.Size = new Size(102, 85);
+            button4.Size = new Size(116, 113);
             button4.TabIndex = 9;
-            button4.Text = "Очистить \n программный \n буфер";
+            button4.Text = "Очистить \r\nпрограммный \r\nбуфер";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(537, 572);
+            button5.Location = new Point(614, 763);
+            button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
-            button5.Size = new Size(236, 38);
+            button5.Size = new Size(270, 51);
             button5.TabIndex = 10;
             button5.Text = "Загрузить из файла в файловый буфер";
             button5.UseVisualStyleBackColor = true;
@@ -146,9 +155,10 @@
             // 
             // button6
             // 
-            button6.Location = new Point(537, 625);
+            button6.Location = new Point(614, 833);
+            button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
-            button6.Size = new Size(236, 38);
+            button6.Size = new Size(270, 51);
             button6.TabIndex = 11;
             button6.Text = "Сохранить из файлового буфера в файл";
             button6.UseVisualStyleBackColor = true;
@@ -156,19 +166,20 @@
             // 
             // button7
             // 
-            button7.Location = new Point(797, 572);
+            button7.Location = new Point(911, 763);
+            button7.Margin = new Padding(3, 4, 3, 4);
             button7.Name = "button7";
-            button7.Size = new Size(102, 91);
+            button7.Size = new Size(117, 121);
             button7.TabIndex = 12;
-            button7.Text = "Очистить \n программный \n буфер";
+            button7.Text = "Очистить \r\nпрограммный \r\nбуфер";
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(911, 667);
+            ClientSize = new Size(1041, 889);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
@@ -182,6 +193,9 @@
             Controls.Add(richTextBox1);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
             Name = "Form1";
             Text = "Нет, не смотрите сюда";
             ResumeLayout(false);

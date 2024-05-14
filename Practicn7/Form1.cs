@@ -12,7 +12,8 @@ namespace Practicn7
 
         private async void button3_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text = (await LogicObj.GenerateText(Convert.ToInt32(textBox1.Text))).ToString();
+            if(textBox1.Text != "")
+            richTextBox1.Text = (await LogicObj.GenerateText(Convert.ToInt32(textBox1.Text)));
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -43,6 +44,15 @@ namespace Practicn7
         private async void button5_Click(object sender, EventArgs e)
         {
             richTextBox2.Text = await LogicObj.GetPhrace();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
